@@ -11,38 +11,68 @@
 
   <!--custom css-->
   <link rel="stylesheet" href="boot.css">
+
+  <!------favicon----->
+  <link rel="icon" href="favicon.jpg">
+  <!-----glyphicon----->
+  <link rel="stylesheet" href="css/glyphicon.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-dark bg-inverse navbar-full" id="nav-main">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-    
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+<nav class="navbar navbar-toggleable-md navbar-dark bg-inverse navbar-full" id="nav-main">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <section class="collapse navbar-collapse" id="navbarResponsive">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#references" role="tab" data-toggle="tab">Contact Us</a>
+    </li>
+    <li class="nav-item">
+       <div class="dropdown">
+         <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+           Dates
+         </button>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="nav-link" href="#references" role="tab" data-toggle="tab">DEC</a>
+           <a class="nav-link" href="#references" role="tab" data-toggle="tab">2019</a>
+         </div>
+     </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="Home">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="About">bbb</div>
+    <div role="tabpanel" class="tab-pane fade" id="Contact Us">ccc</div>
+  </div>&nb
+  <div role="tabpanel" class="tab-pane fade" id="dates">ccc</div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search">Search</span></button>
+    </form>
+
+
+</section>
+</nav>
 
   <section id="cover">
     <div id="cover-caption">
       <div class="container">
         <div class="col-sm-10 col-smoffset-1">
+          <img class="logi" src="log.jpg" alt="logo">
           <h1 class="display-3"> Welcome to Matrimony</h1>
+
           <p>Let the wife make the husband glad to come home, and let him make her sorry to see him leave... </p>
+
           <form action="" class="form-inline">
             <div class="form-group">
               <label class="sr-only">name</label>
@@ -62,16 +92,16 @@
       </div>
     </div>
   </section>
-  
+
   <section id="carousel">
 
-    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+    <div id="carousel-Home" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carousel-Home" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-Home" data-slide-to="1"></li>
         <li data-target="#carousel-Home" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="d-block w-100" src="slide1.jpg" alt="Women">
           <div class="carousel-caption">
@@ -95,11 +125,11 @@
         </div>
       </div>
       <a class="carousel-control-prev" href="#carousel-Home" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="icon-prev" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carousel-Home" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="icon-next" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -107,17 +137,19 @@
 
       <div class="section-content">
         <div class="container">
-          <h2> what-we-do</h2>
-          <p class="lead"> Marriage can be recognized by a state, an organization, a religious authority,
-            a tribal group, a local community, or peers. It is often viewed as a contract. When a marriage is
-            performed and carried out by a government institution in accordance with the marriage laws of the
-            jurisdiction,
-            without religious content, it is a civil marriage. Civil marriage recognizes and creates the rights and
-            obligations
-            intrinsic to matrimony before the state</p>
+          <h2> Wedding</h2>
+          <div class="jumbotron">
+            <p class="lead"> Marriage can be recognized by a state, an organization, a religious authority,
+              a tribal group, a local community, or peers. It is often viewed as a contract. When a marriage is
+              performed and carried out by a government institution in accordance with the marriage laws of the
+              jurisdiction,
+              without religious content, it is a civil marriage. Civil marriage recognizes and creates the rights and
+              obligations
+              intrinsic to matrimony before the state</p>
+          </div>
           <div class="row">
             <div class="col-sm-12">
-              <div class="card-group">
+              <div class="card-deck">
                 <div class="card">
                   <div class="card-block">
                     <h4 class="card-title">Christan Marriages></h4>
@@ -133,8 +165,8 @@
                       eye from a given direction determines the color sensation in that
                       direction, there are many more possible spectral combinations than
                       color sensations</p>
-                    <button type="button" class="btn btn-success-outline" data-toggle a="modal" data-target="#mymodal">For
-                      More INFO</button>
+                    <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#mymodal">For
+                      More Info</button>
                   </div>
                 </div>
                 <div class="card">
@@ -150,8 +182,8 @@
                       eye from a given direction determines the color sensation in that
                       direction, there are many more possible spectral combinations than
                       color sensations</p>
-                    <button type="button" class="btn btn-success-outline" data-toggle a="modal" data-target="#mymodal">For
-                      More INFO</button>
+                    <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#mymodal">For
+                      More Info</button>
                   </div>
 
                 </div>
@@ -170,8 +202,8 @@
                       here are few best collections of wedding quotes and short
                       wishes for newly wedded couples.
                     </p>
-                    <button type="button" class="btn btn-success-outline" data-toggle a="modal" data-target="#mymodal">For
-                      More INFO</button>
+                    <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#mymodal">For
+                      More Info</button>
                   </div>
                 </div>
               </div>
@@ -196,6 +228,36 @@
       crossorigin="anonymous"></script>
 
     <script src="js/bootstrap.min.js"></script>
+
+
+
+    
+
+
+    
+
+    
+
+
+
+    
 </body>
+<section id="maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5692091150436!2d77.61174605039153!3d12.93538629083487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e0c7d418f%3A0x48d008360cebcde4!2sStackroute!5e0!3m2!1sen!2sin!4v1544681192201" width="1600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+
+
+<footer> 
+  <a href="#"> <img src="social1.jpg"></a>
+
+   <ul id="foot">
+    <li> <a href="https://www.facebook.com/public/Marriage-Link"> facebook </a></li>
+     <li> <a href=https://www.linkedin.com/company/matrimony-com> linkedin </a></li>
+     <li> <a href="https://twitter.com/hashtag/wedding"> twitter </a></li>
+</ul>
+ copyrite Pricella
+
+</footer>
 
 </html>

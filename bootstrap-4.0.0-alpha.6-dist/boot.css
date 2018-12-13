@@ -1,10 +1,65 @@
 html,body{
    height:100%;
+   background-color: blanchedalmond;
 }
+#nav-main
+{
+   position: fixed;
+   top:0px;
+   width: 100%;
+   z-index: 1;
+   text-decoration-color: aqua;
+   text-emphasis-color: white;
+}
+
 
 img{
    max-width:100%;
 }
+.logi
+{
+   height: 50px;
+   width: 50px;
+}
+
+#map
+{
+   padding-bottom: 10px;
+   padding-top: 10px;
+   width: 1600px;
+}
+
+
+ p
+
+{
+   font-family: 'Roboto'; 
+}
+#carousel
+{
+   padding-top: 30px;
+}
+
+
+#cover img
+{
+   float: left; 
+   position:relative;
+   top:15px;
+   width: 100px;
+   height: 100px;
+   
+
+}
+footer
+{
+      height: 90px;
+      width: 100%;
+      z-index: 1;
+   }
+
+
+
 /* cover */
 
 
@@ -22,4 +77,36 @@ img{
 {
    width: 100%;
 }
+.btn1
+{
+   background-color: transparent;
+   color: white;
+}
+footer
+{  
+   background-color:black;
+   height: 100px;
+
+}
+footer img
+{
+float: right;
+}
+
+ul li{
+   display: inline;
+}
+
+#maps {
+  padding-top: 10px;
+  padding-bottom:10px; /* The height is 400 pixels */
+   /* The width is the width of the web page */
+  }
+#nav-main
+{
+   position: fixed;
+   z-index:1;
+   width: 1600px;
+}
+
 
